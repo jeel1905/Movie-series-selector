@@ -14,6 +14,13 @@ const RandomSeries = () => {
         Generate Random Series
       </button>
       {seriesName && <h2 className="mt-4 text-xl">Random Series: {seriesName}</h2>}
+
+      <ul className="mt-6 list-disc text-left text-gray-700 list-inside max-w-2xl mx-auto
+      ">
+              {series.map((m, index) => (
+                <li className="" key={index}>{m}</li>
+              ))}
+            </ul>
     </div>
   );
 };
